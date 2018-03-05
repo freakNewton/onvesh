@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+*{box-sizing:border-box;}
+body, html{margin:0;padding:0;}
+body{
+  background-color:#fff;
+  font-family:sans-serif;
+}
+#loginform{
+  width:350px;
+  height:340px;
+  background-color:#141414;
+  
+  
+  /* Center like a man */
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-150px;
+  margin-top:-175px;
+  
+  border-radius:5px;
+  padding:5px;
+}
+h2{
+	font-family:'Ubuntu',sans-serif;
+  text-align:center;
+  font-size:42px;
+  color:#fff;
+}
+input{display:block;}
+input[type="password"], input[type="email"]{
+  -webkit-transition:border 0.2s ease-in-out;
+  -moz-transition:border 0.2s ease-in-out;
+  -ms-transition:border 0.2s ease-in-out;
+  -o-transition:border 0.2s ease-in-out;
+			
+  border:2px solid #EEE;
+  border-radius:5px;
+  background-color:#EEE;
+  padding:10px;
+  margin:0 auto;
+  margin-top:15px;
+  font-size:18px;
+  font-family:sans-serif;
+  width:270px;
+  outline:none;
+}
+input[type="submit"]{
+  border:0;
+  margin:0 auto;
+  margin-top:15px;
+  background:#4CAF50;
+  color:#FFF;
+  font-size:18px;
+  padding:10px;
+  border-radius:5px;
+  width:270px;
+  outline:none;
+  cursor:pointer;
+}
+
+input[type="email"]:focus, input[type="password"]:focus{
+  border:2px solid #3232ff;
+}
+input[type="submit"]:hover{
+  color:#4CAF50;
+  background-color:#fff;
+}
+.warning{
+  padding:10px;
+  margin:10px;
+  text-align:center;
+  color:#666;
+  display:none;
+}
+
+@media only screen and (min-width:150px) and (max-width:350px){
+	#loginform{
+  width:390px;
+  height:390px;
+  background-color:#141414;
+  
+  
+  /* Center like a man */
+  position:absolute;
+  top:50%;
+  left:50%;
+  margin-left:-150px;
+  margin-top:-175px;
+  
+  border-radius:5px;
+  padding:5px;
+}
+	h2{
+	font-family:'Ubuntu',sans-serif;
+  text-align:center;
+  font-size:52px;
+  color:#fff;
+}
+input{display:block;}
+input[type="password"], input[type="email"]{
+  -webkit-transition:border 0.2s ease-in-out;
+  -moz-transition:border 0.2s ease-in-out;
+  -ms-transition:border 0.2s ease-in-out;
+  -o-transition:border 0.2s ease-in-out;
+			
+  border:2px solid #EEE;
+  border-radius:5px;
+  background-color:#EEE;
+  padding:20px;
+  margin:10px auto;
+  font-size:18px;
+  font-family:sans-serif;
+  width:310px;
+  outline:none;
+}
+input[type="submit"]{
+  border:0;
+  margin:0 auto;
+  margin-top:15px;
+  background:#4CAF50;
+  color:#FFF;
+  font-size:22px;
+  padding:5px;
+  border-radius:5px;
+  width:310px;
+  outline:none;
+  cursor:pointer;
+}
+a{
+	display:block;
+	-webkit-transition:border 0.2s ease-in-out;
+  -moz-transition:border 0.2s ease-in-out;
+  -ms-transition:border 0.2s ease-in-out;
+  -o-transition:border 0.2s ease-in-out;
+			
+  border:2px solid #141414;
+  border-radius:5px;
+  padding:10px;
+  margin:0 auto;
+  margin-top:10px;
+  font-size:18px;
+  font-family:sans-serif;
+  width:290px;
+  outline:none;
+  text-align:center;
+  color:#fff;
+}
+}
+@media (max-width: 600px) and (max-height: 800px) {
+    #loginform {
+        width: 80%;
+        height:50%;
+        margin-top: 0;
+        left: 10%;
+        top:25%;
+        margin-left: 0;
+    }
+    input[type=submit], input[type=email], input[type=password]{
+      width: 100%;
+      margin-top: 10px;
+      margin-left: 0;
+
+    }
+}
+

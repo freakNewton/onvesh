@@ -203,6 +203,8 @@ if (mysqli_num_rows($query_name) > 0){
 			 
 			echo "<p style='text-align:center;color:red;font-size:40px;'>".'Incorrect Information filled!'."</p>";
 		}
+			include 'navigation.html'
+			<button type="submit">Cancel</button>
 }
 else{
 	include 'navigation.html';

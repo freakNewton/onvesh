@@ -207,6 +207,6 @@ if (mysqli_num_rows($query_name) > 0){
 else{
 	include 'navigation.html';
 			echo "<p style='text-align:center;color:green;font-size:40px;'>".'Sorry, '.$name."</p>";
-			echo "<p style='text-align:center;color:red;font-size:40px;'>".'You cannot Register!'."</p>";
+			echo "<p style='text-align:center;color:red;font-size:40px;'>".'you cannot register!'."</p>";
 }
 ?>

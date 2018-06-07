@@ -2,198 +2,233 @@
 <html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
- <title>About us</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-  <script  src="js/index.js"></script>
+<title>About us</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="js/index.js"></script>
 
 <style>
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
+    body {
+        font-family: Verdana, sans-serif;
+        margin: 0;
+    }
 
-* {
-  box-sizing: border-box;
-}
-.row{
-  margin-left: 3%;
-}
-.row > .column {
-  padding: 0 0px;
-}
+    * {
+        box-sizing: border-box;
+    }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+    .row {
+        margin-left: 3%;
+    }
 
-}
+    .row>.column {
+        padding: 0 0px;
+    }
 
-.column {
-  display: inline-block;
-  width: 32%;
-}
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
 
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+    }
 
-/* Modal Content */
-.modal-content {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 15%;
-  margin: auto;
-  width: 100%;
-  max-width: 100%;
-}
+    .column {
+        display: inline-block;
+        width: 32%;
+    }
 
-/* The Close Button */
-.close {
-  color: black;
-  position: absolute;
-  right: 2%;
-  font-size: 35px;
-  font-weight: bold;
-}
+    /* The Modal (background) */
 
-.close:hover,
-.close:focus {
-  color: red  ;
-  text-decoration: none;
-  cursor: pointer;
-}
+    .modal {
+        display: none;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
 
-.mySlides {
-  display: none;
-}
+    /* Modal Content */
 
-.cursor {
-  cursor: pointer
-}
+    .modal-content {
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 15%;
+        margin: auto;
+        width: 100%;
+        max-width: 100%;
+    }
 
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
+    /* The Close Button */
 
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    .close {
+        color: black;
+        position: absolute;
+        right: 2%;
+        font-size: 35px;
+        font-weight: bold;
+    }
 
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
+    .close:hover,
+    .close:focus {
+        color: red;
+        text-decoration: none;
+        cursor: pointer;
+    }
 
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-@font-face{
-   font-family: 'forte1';
-    src: url('FORTE.ttf');
-}
-img {
-  margin-bottom: 4px;
-}
-.caption-container {
-  text-align: center;
-  background-color: rgba(0, 0, 0, 0.5);;
-  padding: 2px 16px;
-  color: white;
-}
+    .mySlides {
+        display: none;
+    }
 
-.demo {
-  opacity: 0.6;
-}
+    .cursor {
+        cursor: pointer
+    }
 
-.active,
-.demo:hover {
-  opacity: 1;
-}
+    /* Next & previous buttons */
 
-img.hover-shadow {
-  transition: 0.3s
-}
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -50px;
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        -webkit-user-select: none;
+    }
 
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
-}
+    /* Position the "next button" to the right */
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+
+    .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+    }
+
+    @font-face {
+        font-family: 'forte1';
+        src: url('FORTE.ttf');
+    }
+
+    img {
+        margin-bottom: 4px;
+    }
+
+    .caption-container {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        ;
+        padding: 2px 16px;
+        color: white;
+    }
+
+    .demo {
+        opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+        opacity: 1;
+    }
+
+    img.hover-shadow {
+        transition: 0.3s
+    }
+
+    .hover-shadow:hover {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+    }
+
 </style>
+
 <body>
-	<section class="navigation">
-  <div class="nav-container">
-    <div class="brand">
-      <a href="index.html">On-VESH</a>
-    </div>
-    <nav>
-      <div class="nav-mobile" id="tag"><a id="nav-toggle" href="#!"><span></span></a></div>
-        <ul class="nav-list">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#!">Events</a>
-            <ul class="nav-dropdown">
-              <li><a href="counter strike.php">Counter Strike</a></li>
-              <li><a href="code it.html">Code It</a></li>
-              <li><a href="minute.html">Minute To Win It</a></li>
-              <li><a href="robo race.html">Robo Race</a></li>
-              <li><a href="talent.html">Talent Hunt</a></li>
-              <li><a href="fifa.html">FIFA</a></li>
-              <li><a href="mr&ms.html">Mr. & Ms. VESP</a></li>
-              <li><a href="rink.html">Rink Football</a></li>
-              <li><a href="bread.html">Bread Board</a></li>
-              <li><a href="masterchef.html">MasterChef VESP</a></li>
-              <li><a href="click.html">Click IT</a></li>
-              <li><a href="box.html">Box Cricket</a></li>
-            </ul>
-          </li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-      
-        </ul>
-      </div>
-  </nav>
-</section>
-<center><h1>ABOUT</h1></center>
-<center><h2>ON-VESH</h2></center>
-<center><p>ON-VESH is an abbreviation for ONLINE ANVESH. It is an Application and Website designed for the students of VIVEKANAND EDUCATION SOCIETY POLYTECHNIC so that they can book tickets and register for the Events in their college fest(ANVESH). It is easy and relaible and each and ever student can book his / her tickets within few minutes.</p></center>
-<center><h1>ABOUT US</h1></center>
-<center><h2>Designers</h2></center>
-<center><p>This is an final year project created by four student of CM6G.</p></center>
-<center><p>1.PRIYESH SHARMA (05).</p></center>
-<center><p>2.NISARG SHAH    (09).</p></center>
-<center><p>3.PRAGALBH PATIL (36).</p></center>
-<center><p>4.NIKHIL KHANEJA (50).</p></center>
+    <section class="navigation">
+        <div class="nav-container">
+            <div class="brand">
+                <a href="index.html">On-VESH</a>
+            </div>
+            <nav>
+                <div class="nav-mobile" id="tag"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="#!">Events</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="counter strike.php">Counter Strike</a></li>
+                            <li><a href="code it.html">Code It</a></li>
+                            <li><a href="minute.html">Minute To Win It</a></li>
+                            <li><a href="robo race.html">Robo Race</a></li>
+                            <li><a href="talent.html">Talent Hunt</a></li>
+                            <li><a href="fifa.html">FIFA</a></li>
+                            <li><a href="mr&ms.html">Mr. & Ms. VESP</a></li>
+                            <li><a href="rink.html">Rink Football</a></li>
+                            <li><a href="bread.html">Bread Board</a></li>
+                            <li><a href="masterchef.html">MasterChef VESP</a></li>
+                            <li><a href="click.html">Click IT</a></li>
+                            <li><a href="box.html">Box Cricket</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                </ul>
+        </div>
+        </nav>
+    </section>
+    <center>
+        <h1>ABOUT</h1>
+    </center>
+    <center>
+        <h2>ON-VESH</h2>
+    </center>
+    <center>
+        <p>ON-VESH is an abbreviation for ONLINE ANVESH. It is an Application and Website designed for the students of VIVEKANAND EDUCATION SOCIETY POLYTECHNIC so that they can book tickets and register for the Events in their college fest(ANVESH). It is easy and relaible and each and ever student can book his / her tickets within few minutes.</p>
+    </center>
+    <center>
+        <h1>ABOUT US</h1>
+    </center>
+    <center>
+        <h2>Designers</h2>
+    </center>
+    <center>
+        <p>This is an final year project created by four student of CM6G.</p>
+    </center>
+    <center>
+        <p>1.PRIYESH SHARMA (05).</p>
+    </center>
+    <center>
+        <p>2.NISARG SHAH (09).</p>
+    </center>
+    <center>
+        <p>3.PRAGALBH PATIL (36).</p>
+    </center>
+    <center>
+        <p>4.NIKHIL KHANEJA (50).</p>
+    </center>
 </body>

@@ -1,5 +1,4 @@
 # On-VESH
-A web application
 
 On-VESH is a Web application developed for Intra College Event hosted by Vivekanand Education's Society's Polytechnic, Mumbai - India.
 The Repo contains all the files that developed the website

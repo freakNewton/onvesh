@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$con=mysqli_connect("localhost","root","12345","onvesh");
+	$con=mysqli_connect("localhost","id4639390_psp","onvesh","id4639390_onveshdb");
 	$enrollment=$_SESSION['enr1'];
 	$name=$_SESSION['uname'];
 	$unique=$_SESSION['ucode'];

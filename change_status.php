@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
-		$con = mysqli_connect("localhost","root","12345","onvesh")or die("Unable to connect");
+		$con=mysqli_connect("localhost","id4639390_psp","onvesh","id4639390_onveshdb") or die("Unable to connect");
 		$ucode=$_SESSION['unique'];
 		$id=$_SESSION['type'];
 		if($id!="core")

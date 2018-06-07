@@ -1,6 +1,6 @@
 <?php
 	/*connect to the database for giving query and fetching results*/
-	$con=mysqli_connect("localhost","root","12345","onvesh");
+	$con=mysqli_connect("localhost","id4639390_psp","onvesh","id4639390_onveshdb");
 	
 	/*get the data from the html form by using the field names*/
 	$username=$_POST["email"];

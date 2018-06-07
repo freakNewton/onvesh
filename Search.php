@@ -4,7 +4,7 @@
 	include 'table_header.html';
 	$name =$_POST['name'];
 	$ucode=$_POST['ucode'];
-	$con = mysqli_connect("localhost","root","12345","onvesh")or die("Unable to connect");
+	$con=mysqli_connect("localhost","id4639390_psp","onvesh","id4639390_onveshdb") or die("Unable to connect");
 	//include 'table_header.html';
 	$id=$_SESSION['type'];
 	
@@ -451,7 +451,10 @@
 	include 'login.html';
 ?>
     </tbody>
-</table>
-<form action='change_status.php' method='POST'><center><button>change status</button></center></form>
-</body>
-</html>
+    </table>
+    <form action='change_status.php' method='POST'>
+        <center><button>change status</button></center>
+    </form>
+    </body>
+
+    </html>

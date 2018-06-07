@@ -1,4 +1,4 @@
- <?php
+<?php
 	session_start();
 	if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] == true) {
 	include 'table_header.html';
@@ -34,7 +34,7 @@
 		</thead>
 		<tbody>";
 	}
-	$con = mysqli_connect("localhost","root","12345","onvesh")or die("Unable to connect");
+		$con=mysqli_connect("localhost","id4639390_psp","onvesh","id4639390_onveshdb") or die("Unable to connect");
 			switch($id){
 				case "core":
 					$result = mysqli_query($con,"SELECT * FROM event_reg");
@@ -422,6 +422,7 @@
 	include 'login.html';
 ?>
     </tbody>
-</table>
-</body>
-</html>
+    </table>
+    </body>
+
+    </html>

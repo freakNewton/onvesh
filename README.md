@@ -8,8 +8,13 @@ Feel free to suggest edits & implement different Frameworks on it.
 The database structure should follow:
  
  Database -> onvesh
+ 
     |
+    
     | ->Table 1: register
+    
     | ->Table 2: event_reg
+    
+    The website is live and running at : onvesh.000webhostapp.com
 
      

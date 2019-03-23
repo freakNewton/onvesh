@@ -28,11 +28,11 @@
 			$row = mysqli_fetch_assoc($res1);
 			$_SESSION['type']=$row["type"];
 			$_SESSION['loggedin']=true;
-			include 'nav_login.html';
+			header('Location: nav_login.html');
 		} 
 	}
 	else {
-		include 'login.html';
+		header(Location: login.html');
 		echo 'Oops! It looks like your username and/or password are incorrect. Please try again.';
 		
     }
